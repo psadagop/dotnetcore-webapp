@@ -37,8 +37,7 @@ jobs:
       - name: dotnet build and publish
         run: |
           dotnet build --configuration Release
-          dotnet publish -c Release -o myapp 
-   
+          dotnet publish -c Release -o myapp   
    - name: Run Snyk to check for vulnerabilities
       uses: snyk/actions/dotnet@master
       env:
